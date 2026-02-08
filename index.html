@@ -6,27 +6,88 @@
   <title>Leena El Busefi | CV</title>
   <meta name="description" content="Leena El Busefi — Economics & Management BSc (Hons) at the University of Bristol. Investment Banking experience, leadership, and skills." />
   <style>
-    :root { --bg:#f6f7fb; --card:#ffffff; --text:#101828; --muted:#475467; --line:#eaecf0; --link:#2563eb; }
+    :root {
+      --bg:#f6f7fb;
+      --card:#ffffff;
+      --text:#101828;
+      --muted:#475467;
+      --line:#eaecf0;
+
+      /* Your requested colours */
+      --heading:#113065;   /* name + headings */
+      --link:#81b1ce;      /* links */
+      --btn:#81b1ce;       /* button background */
+    }
+
     * { box-sizing: border-box; }
-    body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background:var(--bg); color:var(--text); }
+    body {
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+    }
+
     .wrap { max-width: 940px; margin: 32px auto; padding: 0 16px; }
-    .card { background:var(--card); border:1px solid var(--line); border-radius: 16px; padding: 28px; box-shadow: 0 10px 25px rgba(16,24,40,.06); }
-    h1 { font-size: 34px; line-height: 1.1; margin: 0 0 6px; }
-    .subtitle { margin:0 0 14px; color:var(--muted); font-weight: 600; }
+    .card {
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 10px 25px rgba(16,24,40,.06);
+    }
+
+    /* 1) Name + headings in #113065 */
+    h1 { font-size: 34px; line-height: 1.1; margin: 0 0 6px; color: var(--heading); }
+    h2 { font-size: 16px; letter-spacing: .08em; text-transform: uppercase; color: var(--heading); margin: 0 0 10px; }
+
+    .subtitle { margin:0 0 12px; color:var(--muted); font-weight: 600; }
+
     .top { display:flex; gap:18px; justify-content: space-between; flex-wrap: wrap; align-items: flex-start; }
-    .links a { color: var(--link); text-decoration: none; margin-right: 14px; font-weight: 600; }
+
+    /* 2) Links in #81b1ce */
+    .links a {
+      color: var(--link);
+      text-decoration: none;
+      margin-right: 14px;
+      font-weight: 700;
+    }
     .links a:hover { text-decoration: underline; }
-    .btn { display:inline-block; margin-top: 12px; background: var(--link); color:#fff; text-decoration:none; padding:10px 14px; border-radius: 10px; font-weight:700; }
+
+    /* Put links + button on one line */
+    .linksRow {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 6px;
+    }
+    .meta { color: var(--muted); font-weight: 600; }
+
+    /* 2) Smaller button + same line */
+    .btn {
+      display:inline-block;
+      background: var(--btn);
+      color:#fff;
+      text-decoration:none;
+      padding:6px 10px;        /* smaller */
+      border-radius: 9px;
+      font-weight:800;
+      font-size: 13px;         /* smaller */
+      line-height: 1;
+      white-space: nowrap;
+    }
     .btn:hover { filter: brightness(0.95); }
+
     hr { border:0; border-top:1px solid var(--line); margin: 22px 0; }
-    h2 { font-size: 16px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px; }
-    .grid { display:grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-    @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+
     ul { margin: 10px 0 0 18px; padding:0; }
     li { margin: 7px 0; }
+
     .role { font-weight: 800; }
-    .meta { color: var(--muted); font-weight: 600; }
     .small { color: var(--muted); }
+
+    /* 3) Justify text */
+    p, li { text-align: justify; }
   </style>
 </head>
 
@@ -36,15 +97,22 @@
       <div class="top">
         <div>
           <h1>Leena El Busefi</h1>
-          <p class="subtitle">Economics &amp; Management BSc (Hons) — University of Bristol (Predicted First)</p>
-          <div class="links">
-            <a href="mailto:leena@busefi.com">Email</a>
-            <a href="tel:+447733395949">Phone</a>
-            <a href="https://www.linkedin.com/in/leena-elbusefi" target="_blank">LinkedIn</a>
+          <p class="subtitle">Economics &amp; Management BSc (Hons) — University of Bristol</p>
+
+          <!-- Links + button on the same line -->
+          <div class="linksRow">
+            <div class="links">
+              <a href="mailto:leena@busefi.com">Email</a>
+              <a href="tel:+447733395949">Phone</a>
+              <a href="https://www.linkedin.com/in/leena-elbusefi" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
             <span class="meta">London, UK</span>
+            <a class="btn" href="LEENA EL BUSEFI- CV.pdf" target="_blank" rel="noopener">Download CV</a>
           </div>
-          <a class="btn" href="LEENA-EL-BUSEFI-CV.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
-          <div class="small" style="margin-top:8px;">Final-year Economics & Management student at the University of Bristol with a keen interest in asset management, portfolio strategy and institutional investing.</div>
+
+          <div class="small" style="margin-top:10px;">
+            Final-year Economics &amp; Management student at the University of Bristol with a keen interest in asset management, portfolio strategy and institutional investing.
+          </div>
         </div>
       </div>
 
@@ -53,8 +121,8 @@
       <div>
         <section>
           <h2>Education</h2>
-          <p><span class="role">University of Bristol</span> <span class="meta">| Sep 2023 – Present</span><br/>
-            Economics and Management BSc (Hons): <strong>Predicted First Class (1st)</strong> — Expected graduation <strong>Jul 2026</strong>
+          <p><span class="role">University of Bristol</span> <span class="meta">| Sep 2023 – Jul 2026 </span><br/>
+            Economics and Management BSc (Hons): Predicted First Class (1st)
           </p>
           <p><span class="role">Holland Park School</span> <span class="meta">| Sep 2021 – Jul 2023</span><br/>
             A Levels: Economics (A*), Latin (A), Mathematics (A)
@@ -64,62 +132,61 @@
           </p>
         </section>
 
+        <section>
+          <h2>Work Experience</h2>
 
-      <section>
-        <h2>Work Experience</h2>
+          <p class="role">Careers Service Ambassador — University of Bristol <span class="meta">| Sep 2025 – Present</span></p>
+          <ul>
+            <li>Triaged careers queries via phone and front-of-house, helping 150+ individuals access tailored resources and appointments; contributed to a 20% increase in careers website traffic.</li>
+            <li>Delivered approachable, high-quality customer service by reducing anxiety around career planning, ensuring students felt confident and supported.</li>
+          </ul>
 
-        <p class="role">Careers Service Ambassador — University of Bristol <span class="meta">| Sep 2025 – Present</span></p>
-        <ul>
-          <li>Triaged careers queries via phone and front-of-house, helping 150+ individuals access tailored resources and appointments; contributed to a 20% increase in careers website traffic.</li>
-          <li>Delivered approachable, high-quality customer service by reducing anxiety around career planning, ensuring students felt confident and supported.</li>
-        </ul>
+          <p class="role" style="margin-top:14px;">Investment Banking Summer Intern — Mizuho (London) <span class="meta">| Jun – Aug 2025</span></p>
+          <ul>
+            <li>Produced presentations for senior management and conducted peer benchmarking to inform strategic decisions for Senior CIB EMEA leadership.</li>
+            <li>Developed a client selection model for coverage, improving efficiency for relationship managers.</li>
+            <li>Built front-office banking knowledge; created and presented a hypothetical proposed €7bn acquisition as part of an intern project.</li>
+            <li>Led organisation of a charity event for partner charity Little Village, raising £1,000+.</li>
+          </ul>
 
-        <p class="role" style="margin-top:14px;">Investment Banking Summer Intern — Mizuho (London) <span class="meta">| Jun – Aug 2025</span></p>
-        <ul>
-          <li>Produced presentations for senior management and conducted peer benchmarking to inform strategic decisions for Senior CIB EMEA leadership.</li>
-          <li>Developed a client selection model for coverage, improving efficiency for relationship managers.</li>
-          <li>Built front-office banking knowledge; created and presented a hypothetical proposed €7bn acquisition as part of an intern project.</li>
-          <li>Led organisation of a charity event for partner charity Little Village, raising £1,000+.</li>
-        </ul>
+          <p class="role" style="margin-top:14px;">Retail Assistant — Marks and Spencer (Bristol) <span class="meta">| Dec 2023 – May 2025</span></p>
+          <ul>
+            <li>Managed high footfall periods and resolved customer queries to maintain a strong customer experience.</li>
+            <li>Maintained store organisation and merchandising during peak trading; demonstrated teamwork and adaptability.</li>
+          </ul>
 
-        <p class="role" style="margin-top:14px;">Retail Assistant — Marks and Spencer (Bristol) <span class="meta">| Dec 2023 – May 2025</span></p>
-        <ul>
-          <li>Managed high footfall periods and resolved customer queries to maintain a strong customer experience.</li>
-          <li>Maintained store organisation and merchandising during peak trading; demonstrated teamwork and adaptability.</li>
-        </ul>
+          <p class="role" style="margin-top:14px;">Women in Banking Insight Event — Nomura (London) <span class="meta">| Sep 2024</span></p>
+          <ul>
+            <li>Networked with senior professionals and attended panels on industry trends and career paths.</li>
+            <li>Completed an AmplifyMe M&amp;A workshop: built a DCF model in Excel under time constraints with 90% accuracy in 45 minutes.</li>
+          </ul>
 
-        <p class="role" style="margin-top:14px;">Women in Banking Insight Event — Nomura (London) <span class="meta">| Sep 2024</span></p>
-        <ul>
-          <li>Networked with senior professionals and attended panels on industry trends and career paths.</li>
-          <li>Completed an AmplifyMe M&amp;A workshop: built a DCF model in Excel under time constraints with 90% accuracy in 45 minutes.</li>
-        </ul>
+          <p class="role" style="margin-top:14px;">Spring Intern — J.P. Morgan Chase (Bournemouth) <span class="meta">| Apr 2024</span></p>
+          <ul>
+            <li>Contributed to collaborative projects including a group pitch to enhance the Bournemouth campus.</li>
+            <li>Engaged in professional development sessions and networked with 20+ finance professionals.</li>
+          </ul>
+        </section>
 
-        <p class="role" style="margin-top:14px;">Spring Intern — J.P. Morgan Chase (Bournemouth) <span class="meta">| Apr 2024</span></p>
-        <ul>
-          <li>Contributed to collaborative projects including a group pitch to enhance the Bournemouth campus.</li>
-          <li>Engaged in professional development sessions and networked with 20+ finance professionals.</li>
-        </ul>
-      </section>
+        <hr />
 
-      <hr />
+        <section>
+          <h2>Extracurriculars</h2>
+          <p class="role">SEO London Finance Summer Academy <span class="meta">| Aug 2024</span></p>
+          <ul>
+            <li>Completed Training The Street workshops on financial modelling and valuation.</li>
+            <li>Engaged with industry professionals and guest speakers across financial services.</li>
+          </ul>
 
-      <section>
-        <h2>Extracurriculars</h2>
-        <p class="role">SEO London Finance Summer Academy <span class="meta">| Aug 2024</span></p>
-        <ul>
-          <li>Completed Training The Street workshops on financial modelling and valuation.</li>
-          <li>Engaged with industry professionals and guest speakers across financial services.</li>
-        </ul>
+          <p class="role" style="margin-top:14px;">AmplifyMe Level 4 Certificate — Investment Banking (Sales &amp; Trading) <span class="meta">| Feb 2024</span></p>
+          <ul>
+            <li>Applied markets knowledge in simulation scenarios; achieved $103,315 in commission in the Investment Banking simulation section.</li>
+          </ul>
+        </section>
 
-        <p class="role" style="margin-top:14px;">AmplifyMe Level 4 Certificate — Investment Banking (Sales &amp; Trading) <span class="meta">| Feb 2024</span></p>
-        <ul>
-          <li>Applied markets knowledge in simulation scenarios; achieved $103,315 in commission in the Investment Banking simulation section.</li>
-        </ul>
-      </section>
+        <hr />
 
-      <hr />
-        
-       <section>
+        <section>
           <h2>Skills &amp; Interests</h2>
           <ul>
             <li><strong>Languages:</strong> English (Native), Arabic (Beginner)</li>
@@ -141,4 +208,3 @@
   </script>
 </body>
 </html>
-
